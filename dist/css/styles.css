@@ -62,4 +62,35 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hero-banner {
+  background: url("/app/images/desktop/image-header.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-banner__heading {
+  color: white;
+  font-family: 'Fraunces', serif;
+  font-size: 78px;
+  letter-spacing: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.hero-banner__heading > img {
+  scale: 1.2;
+}
 /*# sourceMappingURL=styles.css.map */
