@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="dist/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Fraunces:wght@700;900&display=swap"
     rel="stylesheet">
 </head>
 
@@ -20,47 +20,57 @@
   <header class="header">
     <nav class="flex flex-ai-c flex-jc-sb">
       <div class="header__logo">
-        <a href="#" class="flex flex-ai-c">
+        <a class="flex flex-ai-c" href="#">
           <img src="app/images/logo.svg" alt="Sunnyside Agency logo">
         </a>
       </div>
       <div class="header__links hide-for-mobile">
         <a href="#">About</a><a href="#">Services</a><a href="#">Projects</a><a href="#">Contact</a>
       </div>
-      <div class="header__burger-menu flex flex-ai-c hide-for-desktop">
+      <div id="burger-menu" class="header__burger-menu flex flex-ai-c hide-for-desktop">
         <span></span>
       </div>
     </nav>
   </header>
   <main>
 
-    <section>
-      <div class="hero-banner flex flex-jc-c">
-        <div class="hero-banner__heading">
-          <p>We are creatives</p>
-          <a href="#">
-            <img src="app/images/icon-arrow-down.svg" alt="">
-          </a>
+    <section class="hero-banner flex flex-jc-c">
+      <div class="hero-banner__heading">
+        <p>We are creatives</p>
+        <a href="#yellow">
+          <img src="app/images/icon-arrow-down.svg" alt="">
+        </a>
+      </div>
+    </section>
+
+    <section id="yellow" class="yellow-section">
+      <div class="yellow-section__img-container">
+        <img src="app/images/mobile/image-transform.jpg">
+      </div>
+      <div class="yellow-section__content">
+        <p class="yellow-section__heading">Transform your brand</p>
+        <p class="yellow-section__details">We are a full-service creative agency specializing in helping brands grow
+          fast. Engage your clients
+          through compelling visuals
+          that do most of the marketing for you.</p>
+        <div class="yellow-section__link">
+          <a href="#">Learn more</a>
         </div>
       </div>
     </section>
 
-    <section class="section__about">
-      Transform your brand
-
-      We are a full-service creative agency specializing in helping brands grow fast.
-      Engage your clients through compelling visuals that do most of the marketing for you.
-
-      Learn more
-
+    <section>
       Stand out to the right audience
 
-      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+      we’ll
       build
       and extend your brand in digital places.
 
       Learn more
+    </section>
 
+    <section>
       Graphic design
       Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
       clients’ attention.
