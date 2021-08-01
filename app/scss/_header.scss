@@ -1,7 +1,41 @@
 .header {
+  padding: 2.25rem 1.5rem;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+
+  &__burger-menu {
+    cursor: pointer;
+    height: 18px;
+    position: relative;
+    width: 28px;
+
+    >span {
+      background: $white;
+      border-radius: 10px;
+      height: .125rem;
+      position: absolute;
+      width: 1.625rem;
+
+      &::before,
+      &::after {
+        content: '';
+        background: $white;
+        border-radius: 10px;
+        height: .125rem;
+        position: absolute;
+        width: 1.625rem;
+      }
+
+      &::before {
+        transform: translateY(-7px);
+      }
+
+      &::after {
+        transform: translateY(7px);
+      }
+    }
+  }
 }
