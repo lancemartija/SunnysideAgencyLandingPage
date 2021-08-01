@@ -21,7 +21,8 @@
   }
 }
 
-.yellow-section {
+.yellow-section,
+.soft-red-section {
   &__img-container {
     >img {
       width: 100%;
@@ -30,7 +31,7 @@
   }
 
   &__content {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 1.625rem 1.5rem;
   }
 
   &__heading {
@@ -63,7 +64,6 @@
       text-transform: uppercase;
 
       &::before {
-        background: $yellow;
         border-radius: 8px;
         bottom: 0;
         content: '';
@@ -80,6 +80,26 @@
         &::before {
           opacity: 1;
         }
+      }
+    }
+  }
+}
+
+.yellow-section {
+  &__link {
+    >a {
+      &::before {
+        background: $yellow;
+      }
+    }
+  }
+}
+
+.soft-red-section {
+  &__link {
+    >a {
+      &::before {
+        background: $soft-red;
       }
     }
   }
