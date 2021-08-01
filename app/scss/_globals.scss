@@ -31,6 +31,18 @@ li {
   list-style: none;
 }
 
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none !important;
+  }
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none !important;
+  }
+}
+
 // flexbox
 .flex {
   display: flex;
