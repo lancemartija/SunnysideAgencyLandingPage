@@ -1,1 +1,22 @@
-.section {}
+.hero-banner {
+  background: url('/app/images/desktop/image-header.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  &__heading {
+    color: $white;
+    font-family: 'Fraunces', serif;
+    font-size: 78px;
+    letter-spacing: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+
+    >img {
+      scale: 1.2;
+    }
+  }
+}
