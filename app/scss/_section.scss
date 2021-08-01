@@ -1,22 +1,19 @@
 .hero-banner {
-  background: url('/app/images/desktop/image-header.jpg');
+  background: url('/app/images/mobile/image-header.jpg');
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 520px;
   position: relative;
 
   &__heading {
     color: $white;
     font-family: 'Fraunces', serif;
-    font-size: 78px;
-    letter-spacing: 18px;
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 8px;
     text-align: center;
     text-transform: uppercase;
     position: absolute;
-
-    >img {
-      scale: 1.2;
-    }
   }
 }
