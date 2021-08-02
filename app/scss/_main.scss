@@ -1,0 +1,173 @@
+@include breakpoint-down(small) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+
+    .hero-banner {
+      background: url('/app/images/mobile/image-header.jpg');
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 518px;
+      position: relative;
+
+      &__heading {
+        color: $white;
+        font-family: 'Fraunces', serif;
+        font-size: 2.125rem;
+        font-weight: 900;
+        letter-spacing: 8px;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .yellow-section,
+    .soft-red-section {
+      &__img-container {
+        >img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &__content {
+        padding: 1rem 1.5rem 1.625rem 1.5rem;
+      }
+
+      &__heading {
+        color: $very-dark-desaturated-blue;
+        font-family: 'Fraunces', serif;
+        font-size: 1.875rem;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      &__subheading {
+        color: $very-dark-grayish-blue;
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+      }
+
+      &__link {
+        margin: 30px 0;
+        text-align: center;
+
+        >a {
+          color: $very-dark-desaturated-blue;
+          font-family: 'Fraunces', serif;
+          font-size: .875rem;
+          font-weight: 900;
+          position: relative;
+          text-transform: uppercase;
+
+          &::before {
+            border-radius: 8px;
+            bottom: 0;
+            content: '';
+            height: 8px;
+            opacity: .3;
+            position: absolute;
+            transform: translate(-5px, 2px);
+            width: 110px;
+            z-index: -1;
+            transition: opacity .2s ease-in-out;
+          }
+
+          &:hover {
+            &::before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .yellow-section {
+      &__link {
+        >a {
+          &::before {
+            background: $yellow;
+          }
+        }
+      }
+    }
+
+    .soft-red-section {
+      &__link {
+        >a {
+          &::before {
+            background: $soft-red;
+          }
+        }
+      }
+    }
+
+    .graphic-section,
+    .photography-section {
+      &__content-container {
+        bottom: 0;
+        left: 0;
+        padding: 1rem 1rem 1.625rem 1rem;
+        position: absolute;
+        right: 0;
+      }
+
+      &__heading {
+        font-family: 'Fraunces', serif;
+        font-size: 1.625rem;
+        font-weight: 900;
+        padding: 0 0 1rem 0;
+        text-align: center;
+      }
+
+      &__subheading {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5;
+        padding: .825rem 0 1.5rem 0;
+        text-align: center;
+      }
+    }
+
+    .graphic-section {
+      background: url('/app/images/mobile/image-graphic-design.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 600px;
+      position: relative;
+
+      &__heading {
+        color: $dark-desaturated-cyan;
+      }
+
+      &__subheading {
+        color: $dark-desaturated-cyan;
+      }
+    }
+
+    .photography-section {
+      background: url('/app/images/mobile/image-photography.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 600px;
+      position: relative;
+
+      &__heading {
+        color: $dark-blue;
+      }
+
+      &__subheading {
+        color: $dark-blue;
+      }
+    }
+  }
+}
