@@ -170,11 +170,22 @@ img {
   letter-spacing: 8px;
   text-align: center;
   text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 63.9375em) {
+  .hero__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__heading {
+    font-size: 4.625rem;
+  }
 }
 
 .yellow-section {
