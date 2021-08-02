@@ -20,6 +20,10 @@
     max-width: 34em;
     padding: 0 1rem 5.4rem;
     width: 100%;
+
+    @include breakpoint-up(large) {
+      padding: 0 4rem 5.9rem;
+    }
   }
 
   &__heading {
