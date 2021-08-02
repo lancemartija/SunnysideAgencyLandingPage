@@ -221,12 +221,12 @@ img {
 @media (min-width: 64em) {
   .yellow-section__content {
     grid-area: details;
-    padding: 10% 8%;
+    padding: 0 18%;
     text-align: left;
   }
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .yellow-section__content {
     text-align: center;
   }
@@ -237,6 +237,7 @@ img {
   font-family: 'Fraunces', serif;
   font-size: 1.875rem;
   font-weight: 900;
+  width: 100%;
 }
 
 @media (min-width: 64em) {
@@ -308,7 +309,7 @@ img {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .yellow-section__link {
     text-align: left;
     margin: 3% 0;
@@ -351,12 +352,12 @@ img {
 
 @media (min-width: 64em) {
   .soft-red-section__content {
-    padding: 10% 8%;
+    padding: 0 19%;
     text-align: left;
   }
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .soft-red-section__content {
     text-align: center;
   }
@@ -367,6 +368,7 @@ img {
   font-family: 'Fraunces', serif;
   font-size: 1.875rem;
   font-weight: 900;
+  width: 100%;
 }
 
 @media (min-width: 64em) {
@@ -439,7 +441,7 @@ img {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .soft-red-section__link {
     text-align: left;
     margin: 3% 0;
