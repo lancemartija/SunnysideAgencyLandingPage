@@ -240,6 +240,7 @@ img {
 
 @media (min-width: 40em) {
   .yellow-section__heading {
+    font-size: 3.375rem;
     margin: 3% 0;
     width: 100%;
   }
@@ -255,6 +256,7 @@ img {
 
 @media (min-width: 40em) {
   .yellow-section__description {
+    font-size: 1.5rem;
     margin: 3% 0;
     width: 100%;
   }
@@ -295,7 +297,19 @@ img {
 }
 
 @media (min-width: 40em) {
+  .yellow-section__link > a {
+    font-size: 1.25rem;
+  }
+  .yellow-section__link > a::before {
+    -webkit-transform: translate(-5px);
+            transform: translate(-5px);
+    width: 155px;
+  }
+}
+
+@media (min-width: 40em) {
   .yellow-section__link {
+    font-size: 1.5rem;
     text-align: left;
     margin: 3% 0;
     width: 100%;
@@ -337,6 +351,7 @@ img {
 
 @media (min-width: 40em) {
   .soft-red-section__content {
+    font-size: 3.375rem;
     padding: 10% 8%;
     text-align: left;
   }
@@ -357,6 +372,7 @@ img {
 
 @media (min-width: 40em) {
   .soft-red-section__heading {
+    font-size: 3.375rem;
     margin: 3% 0;
     width: 100%;
   }
@@ -372,6 +388,7 @@ img {
 
 @media (min-width: 40em) {
   .soft-red-section__description {
+    font-size: 1.5rem;
     margin: 3% 0;
     width: 100%;
   }
@@ -413,7 +430,19 @@ img {
 }
 
 @media (min-width: 40em) {
+  .soft-red-section__link > a {
+    font-size: 1.25rem;
+  }
+  .soft-red-section__link > a::before {
+    -webkit-transform: translate(-5px);
+            transform: translate(-5px);
+    width: 155px;
+  }
+}
+
+@media (min-width: 40em) {
   .soft-red-section__link {
+    font-size: 1.5rem;
     text-align: left;
     margin: 3% 0;
     width: 100%;
