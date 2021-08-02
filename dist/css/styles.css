@@ -494,6 +494,12 @@ img {
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  .graphic-section__heading {
+    font-size: 2.25rem;
+  }
+}
+
 .graphic-section__description {
   color: #25564b;
   font-family: 'Barlow', sans-serif;
@@ -502,6 +508,12 @@ img {
   line-height: 1.5;
   margin: 0;
   text-align: center;
+}
+
+@media (min-width: 64em) {
+  .graphic-section__description {
+    font-size: 1.375rem;
+  }
 }
 
 .graphic-section > * {
@@ -556,6 +568,12 @@ img {
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  .photography-section__heading {
+    font-size: 2.25rem;
+  }
+}
+
 .photography-section__description {
   color: #19536b;
   font-family: 'Barlow', sans-serif;
@@ -564,6 +582,12 @@ img {
   line-height: 1.5;
   margin: 0;
   text-align: center;
+}
+
+@media (min-width: 64em) {
+  .photography-section__description {
+    font-size: 1.375rem;
+  }
 }
 
 .photography-section > * {
