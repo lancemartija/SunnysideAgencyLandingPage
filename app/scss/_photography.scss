@@ -1,4 +1,13 @@
 .photography-section {
+  position: relative;
+
+  &__img-container {
+    >img {
+      display: block;
+      width: 100%;
+    }
+  }
+
   &__content {
     bottom: 0;
     left: 0;
@@ -8,6 +17,7 @@
   }
 
   &__heading {
+    color: $dark-blue;
     font-family: 'Fraunces', serif;
     font-size: 1.625rem;
     font-weight: 900;
@@ -17,6 +27,7 @@
   }
 
   &__subheading {
+    color: $dark-blue;
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
     font-weight: 600;
@@ -24,18 +35,5 @@
     margin: 0;
     padding: .825rem 0 1.5rem 0;
     text-align: center;
-  }
-}
-
-.photography-section {
-  background: url('/app/images/mobile/image-photography.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  position: relative;
-
-  &__heading,
-  &__subheading {
-    color: $dark-blue;
   }
 }
