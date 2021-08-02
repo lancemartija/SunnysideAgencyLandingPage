@@ -7,7 +7,7 @@
         "../../app/scss/_mixins.scss",
         "../../app/scss/_globals.scss",
         "../../app/scss/_header.scss",
-        "../../app/scss/_section.scss",
+        "../../app/scss/_main.scss",
         "../../app/scss/_footer.scss"
     ],
     "names": [],
