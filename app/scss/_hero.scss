@@ -25,9 +25,16 @@
     letter-spacing: 8px;
     text-align: center;
     text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    @include breakpoint-down(medium) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @include breakpoint-up(large) {
+      font-size: 4.625rem;
+    }
   }
 }
