@@ -90,24 +90,12 @@
       }
     }
 
-    .yellow-section {
-      &__link {
-        >a {
-          &::before {
-            background: $yellow;
-          }
-        }
-      }
+    .yellow-section__link a::before {
+      background: $yellow;
     }
 
-    .soft-red-section {
-      &__link {
-        >a {
-          &::before {
-            background: $soft-red;
-          }
-        }
-      }
+    .soft-red-section__link a::before {
+      background: $soft-red;
     }
 
     .graphic-section,
@@ -145,10 +133,7 @@
       height: 600px;
       position: relative;
 
-      &__heading {
-        color: $dark-desaturated-cyan;
-      }
-
+      &__heading,
       &__subheading {
         color: $dark-desaturated-cyan;
       }
@@ -161,10 +146,7 @@
       height: 600px;
       position: relative;
 
-      &__heading {
-        color: $dark-blue;
-      }
-
+      &__heading,
       &__subheading {
         color: $dark-blue;
       }
