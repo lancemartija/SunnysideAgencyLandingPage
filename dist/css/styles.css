@@ -487,6 +487,12 @@ img {
   width: 100%;
 }
 
+@media (min-width: 64em) {
+  .graphic-section__content {
+    padding: 0 4rem 5.9rem;
+  }
+}
+
 .graphic-section__heading {
   color: #25564b;
   font-family: 'Fraunces', serif;
@@ -559,6 +565,12 @@ img {
   max-width: 34em;
   padding: 0 1rem 5.4rem;
   width: 100%;
+}
+
+@media (min-width: 64em) {
+  .photography-section__content {
+    padding: 0 4rem 5.9rem;
+  }
 }
 
 .photography-section__heading {
