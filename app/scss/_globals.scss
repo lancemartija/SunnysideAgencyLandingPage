@@ -15,21 +15,14 @@ body {
   padding: 0;
   font-size: $font-med;
   line-height: 1.15;
-
-  /*
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Fraunces', serif;
-  */
+  // font-family: 'Barlow', sans-serif;
+  // font-family: 'Fraunces', serif;
 }
 
 a,
 a:visited,
 a:hover {
   text-decoration: none;
-}
-
-li {
-  list-style: none;
 }
 
 .hide-for-desktop {
