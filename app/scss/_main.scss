@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 
-    .hero-banner {
+    .hero {
       background: url('/app/images/mobile/image-header.jpg');
       background-position: bottom center;
       background-repeat: no-repeat;
