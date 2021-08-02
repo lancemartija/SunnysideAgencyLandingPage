@@ -126,7 +126,7 @@ li {
     -ms-grid-columns: (minmax(375px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
   }
-  .main .hero-banner {
+  .main .hero {
     background: url("/app/images/mobile/image-header.jpg");
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ li {
     height: 518px;
     position: relative;
   }
-  .main .hero-banner__heading {
+  .main .hero__heading {
     color: white;
     font-family: 'Fraunces', serif;
     font-size: 2.125rem;
