@@ -14,6 +14,7 @@
     >img {
       display: block;
       width: 100%;
+      height: 100%;
     }
 
     @include breakpoint-up(medium) {
@@ -26,7 +27,12 @@
 
     @include breakpoint-up(medium) {
       grid-area: details;
-      padding: 3%
+      padding: 10% 8%;
+      text-align: left;
+    }
+
+    @include breakpoint-down(small) {
+      text-align: center;
     }
   }
 
@@ -35,25 +41,21 @@
     font-family: 'Fraunces', serif;
     font-size: 1.875rem;
     font-weight: 900;
-    text-align: center;
 
     @include breakpoint-up(medium) {
-      text-align: left;
       margin: 3% 0;
       width: 100%;
     }
   }
 
-  &__subheading {
+  &__description {
     color: $very-dark-grayish-blue;
     font-family: 'Barlow', sans-serif;
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.5;
-    text-align: center;
 
     @include breakpoint-up(medium) {
-      text-align: left;
       margin: 3% 0;
       width: 100%;
     }
