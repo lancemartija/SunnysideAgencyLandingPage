@@ -119,11 +119,6 @@ img {
           transform: translateY(8px);
 }
 
-.main {
-  display: -ms-grid;
-  display: grid;
-}
-
 .wrapper {
   display: -ms-grid;
   display: grid;
