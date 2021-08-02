@@ -1,0 +1,41 @@
+.graphic-section {
+  &__content {
+    bottom: 0;
+    left: 0;
+    padding: 1rem 1rem 1.625rem 1rem;
+    position: absolute;
+    right: 0;
+  }
+
+  &__heading {
+    font-family: 'Fraunces', serif;
+    font-size: 1.625rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0 0 1rem 0;
+    text-align: center;
+  }
+
+  &__subheading {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    padding: .825rem 0 1.5rem 0;
+    text-align: center;
+  }
+}
+
+.graphic-section {
+  background: url('/app/images/mobile/image-graphic-design.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+
+  &__heading,
+  &__subheading {
+    color: $dark-desaturated-cyan;
+  }
+}
