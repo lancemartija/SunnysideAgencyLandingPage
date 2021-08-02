@@ -213,8 +213,8 @@ li {
   .main .soft-red-section__link a::before {
     background: #fe7867;
   }
-  .main .graphic-section__content-container,
-  .main .photography-section__content-container {
+  .main .graphic-section__content,
+  .main .photography-section__content {
     bottom: 0;
     left: 0;
     padding: 1rem 1rem 1.625rem 1rem;
@@ -226,6 +226,7 @@ li {
     font-family: 'Fraunces', serif;
     font-size: 1.625rem;
     font-weight: 900;
+    margin: 0;
     padding: 0 0 1rem 0;
     text-align: center;
   }
@@ -235,6 +236,7 @@ li {
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
+    margin: 0;
     padding: .825rem 0 1.5rem 0;
     text-align: center;
   }
