@@ -27,11 +27,11 @@
 
     @include breakpoint-up(large) {
       grid-area: details;
-      padding: 10% 8%;
+      padding: 0 18%;
       text-align: left;
     }
 
-    @include breakpoint-down(medium) {
+    @include breakpoint-down(small) {
       text-align: center;
     }
   }
@@ -41,6 +41,7 @@
     font-family: 'Fraunces', serif;
     font-size: 1.875rem;
     font-weight: 900;
+    width: 100%;
 
     @include breakpoint-up(large) {
       font-size: 3.375rem;
@@ -105,7 +106,7 @@
       }
     }
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
       text-align: left;
       margin: 3% 0;
       width: 100%;
