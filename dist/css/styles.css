@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  background: #FFFCF8;
   margin: 0;
   padding: 0;
   font-size: 1.125rem;
@@ -217,7 +218,7 @@ img {
   padding: 1rem 1.5rem 1.625rem 1.5rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .yellow-section__content {
     grid-area: details;
     padding: 10% 8%;
@@ -225,7 +226,7 @@ img {
   }
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 63.9375em) {
   .yellow-section__content {
     text-align: center;
   }
@@ -238,7 +239,7 @@ img {
   font-weight: 900;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .yellow-section__heading {
     font-size: 3.375rem;
     margin: 3% 0;
@@ -254,7 +255,7 @@ img {
   line-height: 1.5;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .yellow-section__description {
     font-size: 1.5rem;
     margin: 3% 0;
@@ -296,7 +297,7 @@ img {
   opacity: 1;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .yellow-section__link > a {
     font-size: 1.25rem;
   }
@@ -307,9 +308,8 @@ img {
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .yellow-section__link {
-    font-size: 1.5rem;
     text-align: left;
     margin: 3% 0;
     width: 100%;
@@ -349,15 +349,14 @@ img {
   padding: 1rem 1.5rem 1.625rem 1.5rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .soft-red-section__content {
-    font-size: 3.375rem;
     padding: 10% 8%;
     text-align: left;
   }
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: 63.9375em) {
   .soft-red-section__content {
     text-align: center;
   }
@@ -370,7 +369,7 @@ img {
   font-weight: 900;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .soft-red-section__heading {
     font-size: 3.375rem;
     margin: 3% 0;
@@ -386,7 +385,7 @@ img {
   line-height: 1.5;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .soft-red-section__description {
     font-size: 1.5rem;
     margin: 3% 0;
@@ -429,7 +428,7 @@ img {
   opacity: 1;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .soft-red-section__link > a {
     font-size: 1.25rem;
   }
@@ -440,9 +439,8 @@ img {
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .soft-red-section__link {
-    font-size: 1.5rem;
     text-align: left;
     margin: 3% 0;
     width: 100%;
