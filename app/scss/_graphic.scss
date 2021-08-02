@@ -29,6 +29,10 @@
     font-weight: 900;
     margin: 0;
     text-align: center;
+
+    @include breakpoint-up(large) {
+      font-size: 2.25rem;
+    }
   }
 
   &__description {
@@ -39,6 +43,10 @@
     line-height: 1.5;
     margin: 0;
     text-align: center;
+
+    @include breakpoint-up(large) {
+      font-size: 1.375rem;
+    }
   }
 
   >* {
