@@ -163,8 +163,8 @@ li {
   text-align: center;
 }
 
-.yellow-section__details,
-.soft-red-section__details {
+.yellow-section__subheading,
+.soft-red-section__subheading {
   color: #5a636c;
   font-family: 'Barlow', sans-serif;
   font-size: 1.125rem;
@@ -216,5 +216,67 @@ li {
 
 .soft-red-section__link > a::before {
   background: #fe7867;
+}
+
+.graphic-section__content-container,
+.photography-section__content-container {
+  bottom: 0;
+  left: 0;
+  padding: 1rem 1rem 1.625rem 1rem;
+  position: absolute;
+  right: 0;
+}
+
+.graphic-section__heading,
+.photography-section__heading {
+  font-family: 'Fraunces', serif;
+  font-size: 1.625rem;
+  font-weight: 900;
+  padding: 0 0 1rem 0;
+  text-align: center;
+}
+
+.graphic-section__subheading,
+.photography-section__subheading {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: .825rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.graphic-section {
+  background: url("/app/images/mobile/image-graphic-design.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.graphic-section__heading {
+  color: #25564b;
+}
+
+.graphic-section__subheading {
+  color: #25564b;
+}
+
+.photography-section {
+  background: url("/app/images/mobile/image-photography.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.photography-section__heading {
+  color: #19536b;
+}
+
+.photography-section__subheading {
+  color: #19536b;
 }
 /*# sourceMappingURL=styles.css.map */
