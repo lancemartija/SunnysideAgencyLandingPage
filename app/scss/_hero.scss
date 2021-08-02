@@ -1,10 +1,21 @@
 .hero {
-  background: url('/app/images/mobile/image-header.jpg');
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 518px;
   position: relative;
+
+  @include breakpoint-down(small) {
+    background: url('/app/images/mobile/image-header.jpg');
+    height: 518px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include breakpoint-up(medium) {
+    background: url('/app/images/desktop/image-header.jpg');
+    height: 100vh;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   &__heading {
     color: $white;
