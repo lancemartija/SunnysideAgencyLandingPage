@@ -25,6 +25,10 @@ a:hover {
   text-decoration: none;
 }
 
+img {
+  user-select: none;
+}
+
 .hide-for-desktop {
   @include breakpoint-up(large) {
     display: none !important;
