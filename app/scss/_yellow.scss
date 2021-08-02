@@ -1,13 +1,33 @@
 .yellow-section {
+  display: grid;
+
+  @include breakpoint-down(small) {
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
+
+  @include breakpoint-up(medium) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "details img";
+  }
+
   &__img-container {
     >img {
+      display: block;
       width: 100%;
-      height: auto;
+    }
+
+    @include breakpoint-up(medium) {
+      grid-area: img;
     }
   }
 
   &__content {
     padding: 1rem 1.5rem 1.625rem 1.5rem;
+
+    @include breakpoint-up(medium) {
+      grid-area: details;
+      padding: 3%
+    }
   }
 
   &__heading {
@@ -16,6 +36,12 @@
     font-size: 1.875rem;
     font-weight: 900;
     text-align: center;
+
+    @include breakpoint-up(medium) {
+      text-align: left;
+      margin: 3% 0;
+      width: 100%;
+    }
   }
 
   &__subheading {
@@ -25,11 +51,17 @@
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
+
+    @include breakpoint-up(medium) {
+      text-align: left;
+      margin: 3% 0;
+      width: 100%;
+    }
   }
 
   &__link {
+    display: block;
     margin: 30px 0;
-    text-align: center;
 
     >a {
       color: $very-dark-desaturated-blue;
@@ -37,6 +69,7 @@
       font-size: .875rem;
       font-weight: 900;
       position: relative;
+      text-align: center;
       text-transform: uppercase;
 
       &::before {
@@ -57,6 +90,12 @@
           opacity: 1;
         }
       }
+    }
+
+    @include breakpoint-up(medium) {
+      text-align: left;
+      margin: 3% 0;
+      width: 100%;
     }
   }
 }
