@@ -17,20 +17,12 @@ body {
   padding: 0;
   font-size: 1.125rem;
   line-height: 1.15;
-  /*
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Fraunces', serif;
-  */
 }
 
 a,
 a:visited,
 a:hover {
   text-decoration: none;
-}
-
-li {
-  list-style: none;
 }
 
 @media (min-width: 64em) {
@@ -124,13 +116,47 @@ li {
   display: grid;
 }
 
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 39.9375em) {
+  .wrapper {
+    -ms-grid-columns: (minmax(375px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
+}
+
+@media (min-width: 40em) {
+  .wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 .hero {
-  background: url("/app/images/mobile/image-header.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 518px;
   position: relative;
+}
+
+@media (max-width: 39.9375em) {
+  .hero {
+    background: url("/app/images/mobile/image-header.jpg");
+    height: 518px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 40em) {
+  .hero {
+    background: url("/app/images/desktop/image-header.jpg");
+    height: 100vh;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .hero__heading {
@@ -148,13 +174,46 @@ li {
           transform: translate(-50%, -50%);
 }
 
+.yellow-section {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 39.9375em) {
+  .yellow-section {
+    -ms-grid-columns: (minmax(375px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
+}
+
+@media (min-width: 40em) {
+  .yellow-section {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "details img";
+  }
+}
+
 .yellow-section__img-container > img {
+  display: block;
   width: 100%;
-  height: auto;
+}
+
+@media (min-width: 40em) {
+  .yellow-section__img-container {
+    grid-area: img;
+  }
 }
 
 .yellow-section__content {
   padding: 1rem 1.5rem 1.625rem 1.5rem;
+}
+
+@media (min-width: 40em) {
+  .yellow-section__content {
+    grid-area: details;
+    padding: 3%;
+  }
 }
 
 .yellow-section__heading {
@@ -163,6 +222,14 @@ li {
   font-size: 1.875rem;
   font-weight: 900;
   text-align: center;
+}
+
+@media (min-width: 40em) {
+  .yellow-section__heading {
+    text-align: left;
+    margin: 3% 0;
+    width: 100%;
+  }
 }
 
 .yellow-section__subheading {
@@ -174,9 +241,17 @@ li {
   text-align: center;
 }
 
+@media (min-width: 40em) {
+  .yellow-section__subheading {
+    text-align: left;
+    margin: 3% 0;
+    width: 100%;
+  }
+}
+
 .yellow-section__link {
+  display: block;
   margin: 30px 0;
-  text-align: center;
 }
 
 .yellow-section__link > a {
@@ -185,6 +260,7 @@ li {
   font-size: .875rem;
   font-weight: 900;
   position: relative;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -207,13 +283,40 @@ li {
   opacity: 1;
 }
 
+@media (min-width: 40em) {
+  .yellow-section__link {
+    text-align: left;
+    margin: 3% 0;
+    width: 100%;
+  }
+}
+
 .yellow-section__link a::before {
   background: #fad400;
 }
 
-.soft-red-section__img-container > img {
+.soft-red-section {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 39.9375em) {
+  .soft-red-section {
+    -ms-grid-columns: (minmax(375px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
+}
+
+@media (min-width: 40em) {
+  .soft-red-section {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.soft-red-section__img-container img {
+  display: block;
   width: 100%;
-  height: auto;
 }
 
 .soft-red-section__content {
@@ -228,6 +331,14 @@ li {
   text-align: center;
 }
 
+@media (min-width: 40em) {
+  .soft-red-section__heading {
+    text-align: left;
+    margin: 3% 0;
+    width: 100%;
+  }
+}
+
 .soft-red-section__subheading {
   color: #5a636c;
   font-family: 'Barlow', sans-serif;
@@ -237,9 +348,17 @@ li {
   text-align: center;
 }
 
+@media (min-width: 40em) {
+  .soft-red-section__subheading {
+    text-align: left;
+    margin: 3% 0;
+    width: 100%;
+  }
+}
+
 .soft-red-section__link {
+  display: block;
   margin: 30px 0;
-  text-align: center;
 }
 
 .soft-red-section__link > a {
@@ -248,7 +367,9 @@ li {
   font-size: .875rem;
   font-weight: 900;
   position: relative;
+  text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .soft-red-section__link > a::before {
@@ -270,8 +391,25 @@ li {
   opacity: 1;
 }
 
+@media (min-width: 40em) {
+  .soft-red-section__link {
+    text-align: left;
+    margin: 3% 0;
+    width: 100%;
+  }
+}
+
 .soft-red-section__link a::before {
   background: #fe7867;
+}
+
+.graphic-section {
+  position: relative;
+}
+
+.graphic-section__img-container > img {
+  display: block;
+  width: 100%;
 }
 
 .graphic-section__content {
@@ -283,6 +421,7 @@ li {
 }
 
 .graphic-section__heading {
+  color: #25564b;
   font-family: 'Fraunces', serif;
   font-size: 1.625rem;
   font-weight: 900;
@@ -292,6 +431,7 @@ li {
 }
 
 .graphic-section__subheading {
+  color: #25564b;
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -301,16 +441,13 @@ li {
   text-align: center;
 }
 
-.graphic-section {
-  background: url("/app/images/mobile/image-graphic-design.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
+.photography-section {
   position: relative;
 }
 
-.graphic-section__heading, .graphic-section__subheading {
-  color: #25564b;
+.photography-section__img-container > img {
+  display: block;
+  width: 100%;
 }
 
 .photography-section__content {
@@ -322,6 +459,7 @@ li {
 }
 
 .photography-section__heading {
+  color: #19536b;
   font-family: 'Fraunces', serif;
   font-size: 1.625rem;
   font-weight: 900;
@@ -331,6 +469,7 @@ li {
 }
 
 .photography-section__subheading {
+  color: #19536b;
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -338,17 +477,5 @@ li {
   margin: 0;
   padding: .825rem 0 1.5rem 0;
   text-align: center;
-}
-
-.photography-section {
-  background: url("/app/images/mobile/image-photography.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  position: relative;
-}
-
-.photography-section__heading, .photography-section__subheading {
-  color: #19536b;
 }
 /*# sourceMappingURL=styles.css.map */
