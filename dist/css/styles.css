@@ -207,10 +207,10 @@ li {
   .main .soft-red-section__link > a:hover::before {
     opacity: 1;
   }
-  .main .yellow-section__link > a::before {
+  .main .yellow-section__link a::before {
     background: #fad400;
   }
-  .main .soft-red-section__link > a::before {
+  .main .soft-red-section__link a::before {
     background: #fe7867;
   }
   .main .graphic-section__content-container,
@@ -245,10 +245,7 @@ li {
     height: 600px;
     position: relative;
   }
-  .main .graphic-section__heading {
-    color: #25564b;
-  }
-  .main .graphic-section__subheading {
+  .main .graphic-section__heading, .main .graphic-section__subheading {
     color: #25564b;
   }
   .main .photography-section {
@@ -258,10 +255,7 @@ li {
     height: 600px;
     position: relative;
   }
-  .main .photography-section__heading {
-    color: #19536b;
-  }
-  .main .photography-section__subheading {
+  .main .photography-section__heading, .main .photography-section__subheading {
     color: #19536b;
   }
 }
