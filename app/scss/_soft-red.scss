@@ -98,8 +98,9 @@
         font-size: 1.25rem;
 
         &::before {
-          transform: translate(-5px);
-          width: 155px;
+          height: 10px;
+          transform: translate(-10px, 2px);
+          width: 165px;
         }
       }
     }
