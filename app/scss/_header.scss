@@ -1,12 +1,68 @@
 @use 'variables'as *;
 @use 'mixins'as *;
 
+.links-wrapper {
+  gap: 70px;
+}
+
 .header {
   padding: 2.25rem 1.5rem;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+
+  @include breakpoint-up(large) {
+    padding: 2.25rem 3.375rem;
+  }
+
+  &__logo {
+    @include breakpoint-up(large) {
+      >a img {
+        width: 228px;
+        height: auto;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 70px;
+
+    >a {
+      color: $white;
+      font-size: 20px;
+      font-family: 'Barlow',
+        sans-serif;
+      font-weight: 600;
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+
+  &__button {
+    &--cta {
+      cursor: pointer;
+      font-size: 18px;
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      transition: all 200ms ease-in-out;
+      color: $very-dark-desaturated-blue;
+      background: $white;
+      padding: 24px 32px;
+      border: none;
+      border-radius: 50px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $white;
+        background: rgba($white, .5)
+      }
+    }
+  }
 
   &__burger-menu {
     cursor: pointer;
