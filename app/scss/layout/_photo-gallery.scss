@@ -1,0 +1,18 @@
+@use '../abstracts/mixins'as *;
+
+.photo-gallery-section {
+  display: grid;
+
+  @include breakpoint-down(medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include breakpoint-up(large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  >img {
+    display: block;
+    width: 100%;
+  }
+}
