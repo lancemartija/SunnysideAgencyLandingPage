@@ -1,1 +1,6 @@
-.footer {}
+@use 'variables'as *;
+@use 'mixins'as *;
+
+.footer {
+  position: relative;
+}
