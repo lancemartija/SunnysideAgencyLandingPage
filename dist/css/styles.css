@@ -559,6 +559,24 @@ img {
   grid-column: 1/2;
 }
 
+.photo-gallery-section {
+  display: grid;
+}
+@media (max-width: 63.9375em) {
+  .photo-gallery-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 64em) {
+  .photo-gallery-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.photo-gallery-section > img {
+  display: block;
+  width: 100%;
+}
+
 .footer {
   position: relative;
 }
