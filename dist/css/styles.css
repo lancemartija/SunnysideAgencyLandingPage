@@ -559,6 +559,20 @@ img {
   grid-column: 1/2;
 }
 
+.testimonials__client-img > img {
+  border-radius: 50%;
+}
+@media (max-width: 63.9375em) {
+  .testimonials__client-img > img {
+    width: 4.625em;
+  }
+}
+@media (min-width: 64em) {
+  .testimonials__client-img > img {
+    width: 6.25em;
+  }
+}
+
 .photo-gallery-section {
   display: grid;
 }
