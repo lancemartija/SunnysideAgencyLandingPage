@@ -1,1 +1,17 @@
-.testimonials {}
+@use '../abstracts/mixins'as *;
+
+.testimonials {
+  &__client-img {
+    >img {
+      border-radius: 50%;
+
+      @include breakpoint-down(medium) {
+        width: 4.625em;
+      }
+
+      @include breakpoint-up(large) {
+        width: 6.25em;
+      }
+    }
+  }
+}
