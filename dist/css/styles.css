@@ -207,13 +207,15 @@ img {
 .yellow-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  z-index: -1;
 }
 @media (min-width: 40em) {
   .yellow-section {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "details img";
   }
+}
+.yellow-section__img-container {
+  z-index: -1;
 }
 .yellow-section__img-container > img {
   display: block;
@@ -327,12 +329,14 @@ img {
 .soft-red-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  z-index: -1;
 }
 @media (min-width: 40em) {
   .soft-red-section {
     grid-template-columns: 1fr 1fr;
   }
+}
+.soft-red-section__img-container {
+  z-index: -1;
 }
 .soft-red-section__img-container img {
   display: block;
