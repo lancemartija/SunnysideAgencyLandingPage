@@ -67,6 +67,10 @@
   &__burger-menu {
     cursor: pointer;
 
+    path {
+      transition: all 200ms ease-in-out;
+    }
+
     &.active {
       path {
         fill: rgba($white, .5);
