@@ -70,6 +70,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 @media (min-width: 64em) {
   .header {
@@ -149,10 +150,10 @@ img {
 .hero {
   position: relative;
   display: grid;
-  z-index: -1;
 }
 .hero__img-container {
   position: relative;
+  z-index: -1;
 }
 .hero__img-container > img {
   display: block;
