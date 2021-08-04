@@ -21,10 +21,10 @@
     justify-content: center;
     justify-self: center;
     max-width: 34em;
-    padding: 0 1rem 5.4rem;
+    padding: 0 1rem 4.2rem;
     width: 100%;
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(xlarge) {
       padding: 0 4rem 5.9rem;
     }
   }
@@ -37,7 +37,7 @@
     margin: 0;
     text-align: center;
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(xlarge) {
       font-size: 2.25rem;
     }
   }
@@ -51,7 +51,7 @@
     margin: 0;
     text-align: center;
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(xlarge) {
       font-size: 1.375rem;
     }
   }
