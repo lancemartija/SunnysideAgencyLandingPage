@@ -116,6 +116,9 @@ img {
 .header__burger-menu {
   cursor: pointer;
 }
+.header__burger-menu path {
+  transition: all 200ms ease-in-out;
+}
 .header__burger-menu.active path {
   fill: rgba(255, 255, 255, 0.5);
 }
