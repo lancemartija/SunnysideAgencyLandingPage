@@ -2,17 +2,15 @@
 @use '../abstracts/variables'as *;
 
 .testimonials {
-  &__grid-wrapper {
+  &__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     margin: 0 0 64px;
-  }
 
-  &__content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 30px 22px;
+    @include breakpoint-up(xlarge) {
+      margin: 0 0 190px;
+      padding: 0 140px;
+    }
   }
 
   &__heading {
@@ -22,9 +20,26 @@
       font-size: 1rem;
       font-weight: 900;
       letter-spacing: 4px;
-      margin: 60px 0 30px;
       text-transform: uppercase;
       text-align: center;
+      margin: 60px 0 30px;
+
+      @include breakpoint-up(xlarge) {
+        margin: 220px 0 80px;
+        font-size: 1.75rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 22px;
+
+    @include breakpoint-up(xlarge) {
+      margin: 30px 1rem;
     }
   }
 
@@ -40,18 +55,25 @@
         }
 
         @include breakpoint-up(large) {
-          width: 6.25em;
+          width: 4.875em;
         }
       }
     }
 
     &-description {
-      color: $very-dark-grayish-blue;
-      text-align: center;
-      font-family: 'Barlow', sans-serif;
-      font-size: 1.125rem;
-      font-weight: 600;
-      line-height: 1.7;
+      >p {
+        color: $very-dark-grayish-blue;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.7;
+
+        @include breakpoint-up(xlarge) {
+          font-size: 1.625rem;
+          margin: 64px 0;
+        }
+      }
     }
 
     &-info {
@@ -63,6 +85,11 @@
         font-size: 1.125rem;
         font-weight: 900;
         margin: 20px 0 0;
+
+        @include breakpoint-up(xlarge) {
+          font-size: 1.625rem;
+          margin: 20px 0 16px;
+        }
       }
 
       >p {
@@ -71,6 +98,10 @@
         font-size: .875rem;
         font-weight: 600;
         margin: 12px 0 0;
+
+        @include breakpoint-up(xlarge) {
+          font-size: 1.25rem;
+        }
       }
     }
   }
