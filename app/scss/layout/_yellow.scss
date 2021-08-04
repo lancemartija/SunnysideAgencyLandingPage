@@ -4,9 +4,7 @@
 .yellow-section {
   display: grid;
 
-  @include breakpoint-down(small) {
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  }
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 
   @include breakpoint-up(medium) {
     grid-template-columns: 1fr 1fr;
@@ -27,15 +25,12 @@
 
   &__content {
     padding: 1rem 1.5rem 1.625rem 1.5rem;
+    text-align: center;
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
       grid-area: details;
       padding: 0 18%;
       text-align: left;
-    }
-
-    @include breakpoint-down(small) {
-      text-align: center;
     }
   }
 
@@ -46,7 +41,11 @@
     font-weight: 900;
     width: 100%;
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
+      margin: 3% 0;
+    }
+
+    @include breakpoint-up(xlarge) {
       font-size: 3.375rem;
       margin: 3% 0;
       width: 100%;
@@ -60,7 +59,11 @@
     font-weight: 500;
     line-height: 1.5;
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
+      margin: 3% 0;
+    }
+
+    @include breakpoint-up(xlarge) {
       font-size: 1.5rem;
       margin: 3% 0;
       width: 100%;
@@ -99,7 +102,7 @@
         }
       }
 
-      @include breakpoint-up(large) {
+      @include breakpoint-up(xlarge) {
         font-size: 1.25rem;
 
         &::before {
