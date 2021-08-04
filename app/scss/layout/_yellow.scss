@@ -3,8 +3,8 @@
 
 .yellow-section {
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  z-index: -1;
 
   @include breakpoint-up(medium) {
     grid-template-columns: 1fr 1fr;
