@@ -115,30 +115,9 @@ img {
 }
 .header__burger-menu {
   cursor: pointer;
-  height: 1.125em;
-  position: relative;
-  width: 1.5em;
 }
-.header__burger-menu > span {
-  background: white;
-  border-radius: 10px;
-  height: 0.125em;
-  position: absolute;
-  width: 1.375em;
-}
-.header__burger-menu > span::before, .header__burger-menu > span::after {
-  content: "";
-  background: white;
-  border-radius: 4px;
-  height: 0.125em;
-  position: absolute;
-  width: 1.375em;
-}
-.header__burger-menu > span::before {
-  transform: translateY(-8px);
-}
-.header__burger-menu > span::after {
-  transform: translateY(8px);
+.header__burger-menu.active path {
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .main {
