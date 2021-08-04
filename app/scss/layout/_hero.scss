@@ -4,10 +4,10 @@
 .hero {
   position: relative;
   display: grid;
-  z-index: -1;
 
   &__img-container {
     position: relative;
+    z-index: -1;
 
     >img {
       display: block;
