@@ -92,7 +92,7 @@ img {
 .header__links > a:hover {
   opacity: 0.5;
 }
-.header__button--cta {
+.header__button--contact {
   cursor: pointer;
   font-size: 18px;
   font-family: "Fraunces", serif;
@@ -105,7 +105,7 @@ img {
   border-radius: 50px;
   text-transform: uppercase;
 }
-.header__button--cta:hover {
+.header__button--contact:hover {
   color: white;
   background: rgba(255, 255, 255, 0.5);
 }
@@ -559,18 +559,67 @@ img {
   grid-column: 1/2;
 }
 
+.testimonials__grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  margin: 0 0 64px;
+}
+.testimonials__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 22px;
+}
+.testimonials__heading > h1 {
+  color: #a7abae;
+  font-family: "Fraunces", serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin: 60px 0 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.testimonials__client-img {
+  margin: 10px;
+}
 .testimonials__client-img > img {
   border-radius: 50%;
 }
 @media (max-width: 63.9375em) {
   .testimonials__client-img > img {
-    width: 4.625em;
+    width: 3.875em;
   }
 }
 @media (min-width: 64em) {
   .testimonials__client-img > img {
     width: 6.25em;
   }
+}
+.testimonials__client-description {
+  color: #5a636c;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.testimonials__client-info {
+  text-align: center;
+}
+.testimonials__client-info > h1 {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-size: 1.125rem;
+  font-weight: 900;
+  margin: 20px 0 0;
+}
+.testimonials__client-info > p {
+  color: #a7abae;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 12px 0 0;
 }
 
 .photo-gallery-section {
