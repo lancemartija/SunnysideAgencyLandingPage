@@ -2,5 +2,105 @@
 @use '../abstracts/mixins'as *;
 
 .footer {
+  background: rgba(144, 212, 197);
+  text-align: center;
+  padding: 70px 40px;
   position: relative;
+
+  &__img {
+    padding: 0 0 30px;
+
+    @include breakpoint-up(xlarge) {
+      padding: 40px 0;
+    }
+
+    svg {
+      scale: 1.4;
+
+      @include breakpoint-up(xlarge) {
+        scale: 1.8;
+      }
+    }
+
+    path {
+      transition: all 200ms ease-in-out;
+      fill: #2C7566;
+    }
+  }
+
+  &__links {
+    gap: 60px;
+    padding: 14px 0;
+    transition: all 200ms ease-in-out;
+
+    @include breakpoint-up(xlarge) {
+      padding: 24px 0;
+      gap: 80px;
+    }
+
+    >a {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: $dark-moderate-cyan;
+      transition: color 200ms ease-in-out;
+
+      &:hover {
+        color: $white;
+      }
+
+      @include breakpoint-up(xlarge) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__socials {
+    gap: 28px;
+    padding: 72px 0 20px;
+
+    @include breakpoint-up(xlarge) {
+      gap: 48px;
+      padding: 80px 0 20px;
+    }
+
+    svg {
+      scale: 1.15;
+
+      @include breakpoint-up(xlarge) {
+        scale: 1.4;
+      }
+    }
+
+    path {
+      transition: all 200ms ease-in-out;
+    }
+
+    >a:hover {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.attribution {
+  color: $dark-moderate-cyan;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: $font-sm;
+
+  >a {
+    font-family: 'Fraunces', serif;
+    color: #2C7566;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: $white;
+    }
+  }
 }
