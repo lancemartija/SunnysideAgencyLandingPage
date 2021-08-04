@@ -686,7 +686,99 @@ img {
 }
 
 .footer {
+  background: #90d4c5;
+  text-align: center;
+  padding: 70px 40px;
   position: relative;
+}
+.footer__img {
+  padding: 0 0 30px;
+}
+@media (min-width: 87.5em) {
+  .footer__img {
+    padding: 40px 0;
+  }
+}
+.footer__img svg {
+  scale: 1.4;
+}
+@media (min-width: 87.5em) {
+  .footer__img svg {
+    scale: 1.8;
+  }
+}
+.footer__img path {
+  transition: all 200ms ease-in-out;
+  fill: #2C7566;
+}
+.footer__links {
+  gap: 60px;
+  padding: 14px 0;
+  transition: all 200ms ease-in-out;
+}
+@media (min-width: 87.5em) {
+  .footer__links {
+    padding: 24px 0;
+    gap: 80px;
+  }
+}
+.footer__links > a {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #458c7e;
+  transition: color 200ms ease-in-out;
+}
+.footer__links > a:hover {
+  color: white;
+}
+@media (min-width: 87.5em) {
+  .footer__links > a {
+    font-size: 1.5rem;
+  }
+}
+.footer__socials {
+  gap: 28px;
+  padding: 72px 0 20px;
+}
+@media (min-width: 87.5em) {
+  .footer__socials {
+    gap: 48px;
+    padding: 80px 0 20px;
+  }
+}
+.footer__socials svg {
+  scale: 1.15;
+}
+@media (min-width: 87.5em) {
+  .footer__socials svg {
+    scale: 1.4;
+  }
+}
+.footer__socials path {
+  transition: all 200ms ease-in-out;
+}
+.footer__socials > a:hover path {
+  fill: #fff;
+}
+
+.attribution {
+  color: #458c7e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.875rem;
+}
+.attribution > a {
+  font-family: "Fraunces", serif;
+  color: #2C7566;
+  transition: color 200ms ease-in-out;
+}
+.attribution > a:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
