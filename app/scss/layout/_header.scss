@@ -66,33 +66,10 @@
 
   &__burger-menu {
     cursor: pointer;
-    height: 1.125em;
-    position: relative;
-    width: 1.5em;
 
-    >span {
-      background: $white;
-      border-radius: 10px;
-      height: .125em;
-      position: absolute;
-      width: 1.375em;
-
-      &::before,
-      &::after {
-        content: '';
-        background: $white;
-        border-radius: 4px;
-        height: .125em;
-        position: absolute;
-        width: 1.375em;
-      }
-
-      &::before {
-        transform: translateY(-8px);
-      }
-
-      &::after {
-        transform: translateY(8px);
+    &.active {
+      path {
+        fill: rgba($white, .5);
       }
     }
   }
