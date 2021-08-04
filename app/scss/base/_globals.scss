@@ -21,6 +21,11 @@ body {
   line-height: 1.15;
   // font-family: 'Barlow', sans-serif;
   // font-family: 'Fraunces', serif;
+
+  ::selection {
+    background: $dark-moderate-cyan;
+    color: $white;
+  }
 }
 
 a,
