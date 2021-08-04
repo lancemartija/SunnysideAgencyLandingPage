@@ -1,16 +1,76 @@
 @use '../abstracts/mixins'as *;
+@use '../abstracts/variables'as *;
 
 .testimonials {
-  &__client-img {
-    >img {
-      border-radius: 50%;
+  &__grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    margin: 0 0 64px;
+  }
 
-      @include breakpoint-down(medium) {
-        width: 4.625em;
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 22px;
+  }
+
+  &__heading {
+    >h1 {
+      color: $grayish-blue;
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin: 60px 0 30px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  &__client {
+    &-img {
+      margin: 10px;
+
+      >img {
+        border-radius: 50%;
+
+        @include breakpoint-down(medium) {
+          width: 3.875em;
+        }
+
+        @include breakpoint-up(large) {
+          width: 6.25em;
+        }
+      }
+    }
+
+    &-description {
+      color: $very-dark-grayish-blue;
+      text-align: center;
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.7;
+    }
+
+    &-info {
+      text-align: center;
+
+      >h1 {
+        color: $very-dark-desaturated-blue;
+        font-family: 'Fraunces', serif;
+        font-size: 1.125rem;
+        font-weight: 900;
+        margin: 20px 0 0;
       }
 
-      @include breakpoint-up(large) {
-        width: 6.25em;
+      >p {
+        color: $grayish-blue;
+        font-family: 'Barlow', sans-serif;
+        font-size: .875rem;
+        font-weight: 600;
+        margin: 12px 0 0;
       }
     }
   }
