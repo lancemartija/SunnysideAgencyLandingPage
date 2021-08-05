@@ -3,14 +3,9 @@
 
 .footer {
   background: rgba(144, 212, 197);
-  display: grid;
   text-align: center;
   padding: 70px 0;
   position: relative;
-
-  @include breakpoint-down(small) {
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  }
 
   &__img {
     padding: 0 0 30px;

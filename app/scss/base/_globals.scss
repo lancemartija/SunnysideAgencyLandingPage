@@ -48,6 +48,13 @@ img {
   }
 }
 
+img,
+article,
+section {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 // flexbox
 .flex {
   display: flex;

@@ -4,8 +4,11 @@
 .testimonials {
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     margin: 0 0 64px;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
     @include breakpoint-up(xlarge) {
       margin: 0 0 190px;

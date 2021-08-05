@@ -2,7 +2,7 @@
 @use '../abstracts/mixins'as *;
 
 .hero {
-  display: grid;
+  // display: grid;
   position: relative;
 
   &__img-container {
@@ -32,9 +32,9 @@
     text-transform: uppercase;
 
     @include breakpoint-down(large) {
+      left: 50%;
       position: absolute;
       top: 50%;
-      left: 50%;
       transform: translate(-50%, -50%);
     }
 
@@ -48,8 +48,11 @@
       gap: 6rem;
       justify-content: center;
       justify-self: center;
+      left: 0;
       position: absolute;
-      transform: translateY(-30%);
+      right: 0;
+      top: 0;
+      transform: translateY(75%);
 
       >p {
         margin: 0;
