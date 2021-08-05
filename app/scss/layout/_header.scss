@@ -2,15 +2,15 @@
 @use '../abstracts/mixins'as *;
 
 .links-wrapper {
-  gap: 70px;
+  gap: 4.375rem;
 }
 
 .header {
+  left: 0;
   padding: 2.25rem 1.5rem;
   position: absolute;
-  top: 0;
-  left: 0;
   right: 0;
+  top: 0;
   z-index: 1;
 
   @include breakpoint-up(large) {
@@ -20,7 +20,7 @@
   &__logo {
     @include breakpoint-up(large) {
       >a img {
-        width: 228px;
+        width: 14.25em;
         height: auto;
       }
     }
@@ -32,7 +32,7 @@
 
     >a {
       color: $white;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-family: 'Barlow',
         sans-serif;
       font-weight: 600;
@@ -45,21 +45,21 @@
   }
 
   &__contact-btn {
+    background: $white;
+    border: none;
+    border-radius: 3.125rem;
+    color: $very-dark-desaturated-blue;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    transition: all 200ms ease-in-out;
-    color: $very-dark-desaturated-blue;
-    background: $white;
-    padding: 24px 32px;
-    border: none;
-    border-radius: 50px;
     text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+    padding: 1.5rem 2rem;
 
     &:hover {
+      background: rgba($white, .5);
       color: $white;
-      background: rgba($white, .5)
     }
   }
 
@@ -78,49 +78,49 @@
   }
 
   .burger-nav {
+    align-items: center;
+    background: #FFFCF8;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 1.5rem;
     justify-content: center;
-    gap: 24px;
-    background: #FFFCF8;
-    padding: 36px 0;
-    position: relative;
+    padding: 2.25rem 0;
     transform: translateY(40px);
     transition: all 200ms ease-in-out;
+    position: relative;
     visibility: hidden;
 
     &::after {
-      content: '';
-      position: absolute;
-      width: 26px;
-      height: 26px;
       background: linear-gradient(315deg, #FFFCF8 50%, #00000000 50%);
-      top: -26px;
+      content: '';
+      height: 1.625rem;
+      position: absolute;
       right: 0;
+      top: -1.625rem;
+      width: 1.625rem;
     }
 
     >a {
-      font-family: 'Barlow', sans-serif;
-      font-weight: 700;
-      font-size: 1.25rem;
       color: $dark-grayish-blue;
-      padding: 8px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: .5rem;
     }
 
     &__menu {
       &-btn--contact {
-        cursor: pointer;
-        font-size: 18px;
-        font-family: 'Fraunces', serif;
-        font-weight: 700;
-        transition: all 200ms ease-in-out;
-        color: $very-dark-desaturated-blue;
         background: $yellow;
-        padding: 20px 32px;
         border: none;
-        border-radius: 50px;
+        border-radius: 3.125rem;
+        color: $very-dark-desaturated-blue;
+        cursor: pointer;
+        font-family: 'Fraunces', serif;
+        font-size: 1.125rem;
+        font-weight: 700;
         text-transform: uppercase;
+        transition: all 200ms ease-in-out;
+        padding: 1.25rem 2rem;
       }
     }
 

@@ -2,8 +2,8 @@
 @use '../abstracts/mixins'as *;
 
 .hero {
-  position: relative;
   display: grid;
+  position: relative;
 
   &__img-container {
     position: relative;
@@ -39,16 +39,16 @@
     }
 
     @include breakpoint-up(xlarge) {
-      position: absolute;
+      align-self: center;
       display: flex;
       align-items: center;
-      justify-content: center;
-      justify-self: center;
       flex-direction: column;
       flex-flow: column nowrap;
-      align-self: center;
       font-size: 4.625rem;
       gap: 6rem;
+      justify-content: center;
+      justify-self: center;
+      position: absolute;
       transform: translateY(-30%);
 
       >p {

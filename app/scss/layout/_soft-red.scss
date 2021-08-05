@@ -87,9 +87,9 @@
         opacity: .3;
         position: absolute;
         transform: translate(-5px, 2px);
+        transition: opacity .2s ease-in-out;
         width: 110px;
         z-index: -1;
-        transition: opacity .2s ease-in-out;
       }
 
       &:hover {
@@ -110,8 +110,8 @@
     }
 
     @include breakpoint-up(medium) {
-      text-align: left;
       margin: 3% 0;
+      text-align: left;
       width: 100%;
     }
   }
