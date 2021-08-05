@@ -881,6 +881,11 @@ img {
   padding: 70px 40px;
   position: relative;
 }
+@media (max-width: 39.9375em) {
+  .footer {
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
+}
 .footer__img {
   padding: 0 0 30px;
 }
