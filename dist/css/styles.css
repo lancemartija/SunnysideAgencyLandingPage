@@ -284,7 +284,11 @@ img {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+}
+@media (max-width: 39.9375em) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
 }
 @media (min-width: 40em) {
   .wrapper {
