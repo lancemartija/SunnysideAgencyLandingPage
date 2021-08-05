@@ -44,28 +44,26 @@
     }
   }
 
-  &__button {
-    &--contact {
-      cursor: pointer;
-      font-size: 18px;
-      font-family: 'Fraunces', serif;
-      font-weight: 700;
-      transition: all 200ms ease-in-out;
-      color: $very-dark-desaturated-blue;
-      background: $white;
-      padding: 24px 32px;
-      border: none;
-      border-radius: 50px;
-      text-transform: uppercase;
+  &__contact-btn {
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    transition: all 200ms ease-in-out;
+    color: $very-dark-desaturated-blue;
+    background: $white;
+    padding: 24px 32px;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
 
-      &:hover {
-        color: $white;
-        background: rgba($white, .5)
-      }
+    &:hover {
+      color: $white;
+      background: rgba($white, .5)
     }
   }
 
-  &__burger-menu {
+  &__burger-button {
     cursor: pointer;
 
     path {
@@ -76,6 +74,58 @@
       path {
         fill: rgba($white, .5);
       }
+    }
+  }
+
+  .burger-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: #FFFCF8;
+    padding: 36px 0;
+    position: relative;
+    transform: translateY(40px);
+    transition: all 200ms ease-in-out;
+    visibility: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      background: linear-gradient(315deg, #FFFCF8 50%, #00000000 50%);
+      top: -26px;
+      right: 0;
+    }
+
+    >a {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: $dark-grayish-blue;
+      padding: 8px;
+    }
+
+    &__menu {
+      &-btn--contact {
+        cursor: pointer;
+        font-size: 18px;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        transition: all 200ms ease-in-out;
+        color: $very-dark-desaturated-blue;
+        background: $yellow;
+        padding: 20px 32px;
+        border: none;
+        border-radius: 50px;
+        text-transform: uppercase;
+      }
+    }
+
+    &.toggle-visibilty {
+      visibility: visible;
     }
   }
 }
