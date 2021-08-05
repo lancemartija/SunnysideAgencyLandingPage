@@ -1,3 +1,39 @@
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 0.2s ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 0.2s ease-in-out forwards;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -97,7 +133,7 @@ img {
 .header__links > a:hover {
   opacity: 0.5;
 }
-.header__button--contact {
+.header__contact-btn {
   cursor: pointer;
   font-size: 18px;
   font-family: "Fraunces", serif;
@@ -110,18 +146,63 @@ img {
   border-radius: 50px;
   text-transform: uppercase;
 }
-.header__button--contact:hover {
+.header__contact-btn:hover {
   color: white;
   background: rgba(255, 255, 255, 0.5);
 }
-.header__burger-menu {
+.header__burger-button {
   cursor: pointer;
 }
-.header__burger-menu path {
+.header__burger-button path {
   transition: all 200ms ease-in-out;
 }
-.header__burger-menu.active path {
+.header__burger-button.active path {
   fill: rgba(255, 255, 255, 0.5);
+}
+.header .burger-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: #FFFCF8;
+  padding: 36px 0;
+  position: relative;
+  transform: translateY(40px);
+  transition: all 200ms ease-in-out;
+  visibility: hidden;
+}
+.header .burger-nav::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(315deg, #FFFCF8 50%, #00000000 50%);
+  top: -26px;
+  right: 0;
+}
+.header .burger-nav > a {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #818498;
+  padding: 8px;
+}
+.header .burger-nav__menu-btn--contact {
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  transition: all 200ms ease-in-out;
+  color: #23303e;
+  background: #fad400;
+  padding: 20px 32px;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.header .burger-nav.toggle-visibilty {
+  visibility: visible;
 }
 
 .main {
