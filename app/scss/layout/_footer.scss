@@ -3,8 +3,9 @@
 
 .footer {
   background: rgba(144, 212, 197);
+  display: grid;
   text-align: center;
-  padding: 70px 40px;
+  padding: 70px 0;
   position: relative;
 
   @include breakpoint-down(small) {
